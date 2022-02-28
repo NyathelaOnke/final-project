@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.btn {
+  padding: 0.5vw 1vw;
+  border: 0.2vw solid;
+  border-radius: 0.12vw;
+  box-shadow: -1vw 1.5vw 1.5vw -1vw black;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+.the-text {
+  padding: 0.5vw 0.9vw;
+  display: block;
+  width: 100%;
+  border: 0.1vw;
+  border-radius: 0.5vw;
+  outline: none;
+  color: black;
+  line-height: 1.2vw;
+  box-shadow: 0.31vw 0.31vw 0.31vw -0.31vw black;
+}
+input:focus {
+  background: black;
+  color: red;
+  box-shadow: 0.35vw 0.35vw 0.35vw -0.35vw red;
+}
+/* Styling of the navbar */
+
+header {
+  background-image: url(images/desktop/image-header.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .logo {
+  float: left;
+  padding-right: 25vw;
+}
+header .user {
+  float: right;
+  padding-right: 1.5vw;
+}
+header .Contact {
+  height: 4vw;
+  padding: 0.1vw;
+  border-radius: 1.5vw;
+  background: whitesmoke;
+  margin-right: 2vw;
+}
+header .Contact a {
+  color: black;
+  font-size: 1.3vw;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+header ul li {
+  position: relative;
+  margin-right: 1vw;
+}
+
+header ul li ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  align-items: stretch;
+  transition: all 0.35s ease-in-out;
+  display: none;
+}
+header ul li:hover ul {
+  display: block;
+}
+header ul li ul li a {
+  letter-spacing: 0.1vw;
+}
+
+header ul li ul li a:hover {
+  color: red;
+}
+
+header ul li a {
+  display: block;
+  color: blanchedalmond;
+  padding: 1vw;
+  font-size: 1.5vw;
+  height: inherit;
+  text-decoration: none;
+  letter-spacing: 0.15vw;
+  transition: all 0.3s ease-in-out;
+}
+
+header .user a:hover {
+  border-radius: 0.5vw;
+  background: rgba(245, 245, 245, 0.4);
+  color: black;
+}
+header.sticky {
+  position: fixed;
+  backdrop-filter: blur(3.5px);
+  z-index: 999;
+  background: #009dc4;
+}
+header .home {
+  padding-left: 34vw;
+}
+header .home h1 {
+  color: whitesmoke;
+  padding-bottom: 15vw;
+}
+header .home iframe {
+  position: relative;
+  bottom: 15vw;
+  padding-left: 10vw;
+  transform: scale(0.5);
+}
+
+/* start styling of main */
+main .contain {
+  width: 100%;
+  display: flex;
+}
+main .contain img {
+  width: 100%;
+}
+main .contain .left,
+main .contain .right {
+  width: 50%;
+}
+main .contain .outText {
+  padding: 12vw;
+}
+main .contain .innerText1 {
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .contain .innerText2 {
+  background-image: url(images/desktop/image-photography.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .contain .theText {
+  padding-top: 35vw;
+  text-align: center;
+  margin: 5vw;
+}
+main h1 {
+  padding: 8vw 0 6vw 0;
+  text-align: center;
+}
+main .testmonials {
+  display: flex;
+}
+main .testmonials .testimony {
+  text-align: center;
+  padding: 3.5vw;
+}
+main .testmonials img {
+  border-radius: 50%;
+}
+main .pict {
+  display: flex;
+  width: 100%;
+}
+main .pict img {
+  width: 100%;
+}
+footer {
+  z-index: 999;
+  text-align: center;
+  background: hsl(168, 34%, 41%);
+}
+footer a {
+  color: whitesmoke;
+}
+footer h4 {
+  padding-top: 5vw;
+}
+footer .qlink {
+  padding-top: 4vw;
+  padding-left: 39vw;
+  display: flex;
+}
+footer .qlink a {
+  padding-right: 2vw;
+}
+footer .social {
+  padding-left: 38vw;
+  display: flex;
+}
+footer .social iframe {
+  margin: 2vw;
+  width: 2vw;
+  height: 2vw;
+} /*
+header .landing h1 {
+  padding-left: 2vw;
+}
+.theLanding .content {
+  display: flex;
+}
+.theLanding p {
+  text-align: center;
+  color: white;
+  position: relative;
+  bottom: 16vw;
+  right: 8.8vw;
+  font-size: 1.3vw;
+  font-weight: 700;
+}*/
+
+.theLanding {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(66, 77, 141, 0.42),
+      rgba(49, 51, 36, 0.63)
+    ),
+    url("images/landing.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.theLanding h1 {
+  letter-spacing: 0.35vw;
+}
+.theLanding a {
+  position: relative;
+  top: 2vw;
+  padding-left: 2vw;
+}
+.theLanding .demo {
+  float: right;
+  background-color: wheat;
+  position: relative;
+  bottom: 5vw;
+  right: 4vw;
+  padding-bottom: 10vw;
+  padding: 1.5vw;
+  border-radius: 15%;
+  font-size: 1.3vw;
+  font-weight: 600;
+  margin-bottom: 20vw;
+}
+.theLanding .landing {
+  color: white;
+  text-align: center;
+}
+.theLanding .landing iframe {
+  position: relative;
+  bottom: 2vw;
+  padding-left: 23vw;
+  transform: scale(0.5);
+}
+
+.theLanding .theTimer {
+  display: flex;
+  height: 7vw;
+  padding-left: 29vw;
+  position: relative;
+  bottom: 5vw;
+}
+
+.theLanding .theTimer .the {
+  padding: 2vw;
+  border: 0.05vw solid black;
+  margin-right: 0.2vw;
+  background: rgba(0, 0, 0, 0.199);
+  color: white;
+  font-size: 1.6vw;
+  font-weight: 800;
+}
+.theLanding .landing p {
+  position: relative;
+  bottom: 5vw;
+  padding-left: 5vw;
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  position: relative;
+  bottom: 5vw;
+  padding-left: 34vw;
+  height: 3vw;
+}
+
+button {
+  width: 7vw;
+  border-top-right-radius: 1.5vw;
+  border-bottom-right-radius: 1.5vw;
+  border: none;
+  background: #009dc4;
+  color: white;
+}
+
+form input {
+  padding: 1.2vw;
+  width: 30vw;
+  border-top-left-radius: 1.5vw;
+  border-bottom-left-radius: 1.5vw;
+  border: none;
+}
+
+.theLanding .social {
+  padding-left: 40.5vw;
+  position: relative;
+  bottom: 5vw;
+  display: flex;
+}
+.theLanding .social iframe {
+  margin-right: 2vw;
+  width: 2vw;
+  height: 2vw;
+}
+.theLanding p a {
+  color: black;
+  padding-top: 10vw;
+}
